@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico"/>
+    <title>새 컬러 등록하기</title>
+    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css" />
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <span class="header-title">새 컬러 등록하기</span>
+            <a href="index.html">
+                <div class="X-back">
+                    <img src="/images/x.svg" alt="X">
+                </div>
+            </a>
+        </div>
+        <span>MBTI</span>
+        <div class="MBTI">
+            <div class="MBTI-content select line-1 E">
+                <span class="MBTI-text">E</span>외향형
+            </div>
+            <div class="MBTI-content line-1 I">
+                <span class="MBTI-text">I</span>내향형
+            </div>
+            <div class="MBTI-content select line-2 S">
+                <span class="MBTI-text">S</span>감각형
+            </div>
+            <div class="MBTI-content line-2 N">
+                <span class="MBTI-text">N</span>직관형
+            </div>
+            <div class="MBTI-content select line-3 T">
+                <span class="MBTI-text">T</span>사고형
+            </div>
+            <div class="MBTI-content line-3 F">
+                <span class="MBTI-text">F</span>감정형
+            </div>
+            <div class="MBTI-content select line-4 J">
+                <span class="MBTI-text">J</span>판단형
+            </div>
+            <div class="MBTI-content line-4 P">
+                <span class="MBTI-text">P</span>인식형
+            </div>
+        </div>
+        <div class="color">
+            <div class="color-head">
+                <span>컬러</span>
+                <div class="repeat-img">
+                    <img src="images/repeat.svg" alt="repeat">
+                </div>
+            </div>
+            <div class="color-body">
+                <input type="text" class="color-body-text" maxlength="7" value="#9441FF"></input>
+                <div class="color-box"></div>
+            </div>
+        </div>
+        <button class="submit">컬러 등록</button>
+        <script src="./new.js"></script>
+    </div>
+</body>
+</html>

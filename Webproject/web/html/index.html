@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인 페이지</title>
+    <link rel="stylesheet" href="/css/index.css" />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <!-- 회원가입 폼 -->
+      <div class="form-container sign-up-container">
+        <form method="post" action="/auth/signup" id="signupForm">
+          <h1>계정 생성</h1>
+          <div class="social-container"></div>
+          <span>이메일로 계정을 생성하세요!</span>
+          <input type="text" placeholder="Name" name="name" required />
+          <input type="email" placeholder="Email" name="email" required />
+          <input
+            type="password"
+            placeholder="Password"
+            name="password"
+            required
+          />
+          <button type="submit">회원가입</button>
+        </form>
+      </div>
+
+      <!-- 로그인 폼 -->
+      <div class="form-container sign-in-container">
+        <form method="post" action="/auth/login" id="loginForm">
+          <h1>로그인</h1>
+          <div class="social-container"></div>
+          <span>계정을 입력하세요!</span>
+          <input type="email" placeholder="Email" name="email" required />
+          <input
+            type="password"
+            placeholder="Password"
+            name="password"
+            required
+          />
+          <button type="submit">로그인</button>
+          <p id="message" style="color: red"></p>
+          <!-- 로그인 실패 시 메시지 표시 -->
+        </form>
+      </div>
+
+      <!-- 오버레이 -->
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>어서오세요!</h1>
+            <p>계속 하려면 개인 정보로 로그인하세요!</p>
+            <button class="ghost" id="signIn">로그인</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>안녕하세요!</h1>
+            <p>로그인 정보를 입력하고 여러 기능들을 사용하세요!</p>
+            <button class="ghost" id="signUp">회원가입</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 자바스크립트 파일 -->
+    <script src="/js/index.js"></script>
+  </body>
+</html>
